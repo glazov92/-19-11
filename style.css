@@ -1,0 +1,150 @@
+/* Задание 1. Класс только для удобства проверки (чтоб было на 1ой странице), если удалить все так же будет работать) */
+ 
+li{  
+ list-style: none;  
+}
+
+.ex1 li:nth-child(1)::before { 
+    content: '●';  /* Тут маркер можно сделать блоком с бордер радиус 50% */
+    font-size: 25px;
+    padding-right: 5px; 
+    color: red;
+}
+
+.ex1 li:nth-child(2)::before {
+    content: '●'; 
+    font-size: 25px;
+    padding-right: 5px; 
+    color: orange;
+}
+
+.ex1 li:nth-child(3)::before {
+    content: '●'; 
+    font-size: 25px;
+    padding-right: 5px; 
+    color: yellow;
+}
+
+.ex1 li:nth-child(4)::before {
+    content: '●'; 
+    font-size: 25px;
+    padding-right: 5px; 
+    color: green;
+}
+
+.ex1 li:nth-child(5)::before {
+    content: '●'; 
+    font-size: 25px;
+    padding-right: 5px; 
+    color: #00FFF0;
+}
+
+.ex1 li:nth-child(6)::before {
+    content: '●'; 
+    font-size: 25px;
+    padding-right: 5px; 
+    color: blue;
+}
+
+.ex1 li:nth-child(7)::before {
+    content: '●'; 
+    font-size: 25px;
+    padding-right: 5px; 
+    color: purple;
+}
+
+/* Задание 2 */
+
+.ex2 li{
+    padding-top: 20px;
+    font-size: 13px;
+    padding-left: 15px;
+}
+
+.ex2 li:nth-child(1)::marker { 
+    content: counter(list-item)' -';
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+.ex2 li:nth-child(2)::marker { 
+    content: counter(list-item)' -';
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+
+.ex2 li:nth-child(3)::marker { 
+    content: counter(list-item)' -';
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+
+.ex2 li:nth-child(4)::marker { 
+    content: counter(list-item)' -';
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+
+.ex2 li:nth-child(5)::marker { 
+    content: counter(list-item)' -';
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+
+.ex2 li:nth-child(6)::marker { 
+    content: counter(list-item)' -';
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+/* Задание 3 */
+
+.lighthouse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.top {
+    height: 60px;
+    width: 130px;
+    border: 1px solid black;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top::before {
+    content:'';
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.box {
+    height: 60px;
+}
+
+.box:nth-child(2) {
+    width: 150px;
+    border: 1px solid black;
+}
+.box:nth-child(3) {
+    width: 170px;
+    background-color: red;
+}
+.box:nth-child(4) {
+    width: 190px;
+    border: 1px solid black;
+}
+.box:nth-child(5) {
+    width: 210px;
+    background-color: red;
+}
